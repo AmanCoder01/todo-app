@@ -53,7 +53,7 @@ const Home = ({ showModal, setShowModal }) => {
       <div className='flex flex-wrap justify-center items-center  max-h-screen h-[90vh] max-w-full '>
 
         <div className='lg:mt-[0rem] md:mt-[2rem] xs:mt-[3rem] sm:mt-[2rem] max-w-[580px] xs:w-12/12  lg:w-5/12 sm:w-12/12'>
-          <h3 className='text-white text-xl font-semibold text-center sm:text-md'>Hi, <i className='text-yellow-400 tracking-widest uppercase'>{name} </i>Welcome to your task list...</h3>
+          <h3 className='text-white text-xl font-semibold text-center sm:text-md'>Hi <i className='text-yellow-400 tracking-widest uppercase'>{name} </i> , Welcome to your task list...</h3>
           <h1 className='text-yellow-50 lg:text-[7rem] sm:text-[3rem] xs:text-[3rem]  font-bold text-center ' style={{ fontFamily: "Protest Revolution" }}> Todo List</h1>
          
         </div>
