@@ -50,7 +50,7 @@ const Home = ({ showModal, setShowModal }) => {
       </div>
 
 
-      <div className='flex flex-wrap justify-center items-center xs:h-[80vh] h-[90vh] max-w-full '>
+      <div className='flex flex-wrap justify-center items-center xs:h-[90vh] h-[90vh] max-w-full '>
 
         <div className='lg:mt-[0rem] md:mt-[2rem] xs:mt-[3rem] sm:mt-[2rem] max-w-[580px] xs:w-[360px] lg:w-5/12 sm:w-12/12'>
           <h3 className='text-white text-xl font-semibold text-center sm:text-md'>Hi <i className='text-yellow-400 tracking-widest uppercase'>{name} </i> , Welcome to your task list...</h3>
@@ -84,10 +84,10 @@ ${category === "Completed" && "bg-richblack-800 py-2 border-2 border-richblack-2
                       case "Tasks":
                         return <OneItem key={index} item={item} />;
                       case "Completed":
-                        return item.isCompleted ? <OneItem key={index} item={item} /> : <EmptyList title={"Completed"} />;
+                        return item.isCompleted ? <OneItem key={index} item={item} /> : null;
 
                       case "Pending":
-                        return item.isCompleted ? <EmptyList title={"Pending"} /> : <OneItem key={index} item={item} />;
+                        return item.isCompleted ? null : <OneItem key={index} item={item} />;
                       default:
                         break;
                     }
