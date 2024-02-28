@@ -1,15 +1,15 @@
 import axios from "axios";
 
 const SignupApi = async (data)=>{
-    return await axios.post('http://localhost:3000/api/register' , data,{ withCredentials: true });
+    return await axios.post('https://todo-app-lilac-tau.vercel.app/api/register' , data,{ withCredentials: true });
 }
 const LoginApi = async (data)=>{
-    return await axios.post('http://localhost:3000/api/login' , data,{ withCredentials: true });
+    return await axios.post('https://todo-app-lilac-tau.vercel.app/api/login' , data,{ withCredentials: true });
 }
 
 const CreateTodoApi = async (data)=>{
     let token = getToken();
-    return await axios.post('http://localhost:3000/api/createTodo' , data,{ 
+    return await axios.post('https://todo-app-lilac-tau.vercel.app/api/createTodo' , data,{ 
         withCredentials: true ,
         headers:{
             auth:token
@@ -19,7 +19,7 @@ const CreateTodoApi = async (data)=>{
 
 const GetTodoApi = async (data)=>{
     let token = getToken();
-    return await axios.get('http://localhost:3000/api/getTodo' ,{ 
+    return await axios.get('https://todo-app-lilac-tau.vercel.app/api/getTodo' ,{ 
         withCredentials: true ,
         headers:{
             auth:token
@@ -29,7 +29,7 @@ const GetTodoApi = async (data)=>{
 
 const MarkTodoApi = async (data)=>{
     let token = getToken();
-    return await axios.post('http://localhost:3000/api/markTodo' ,data ,{ 
+    return await axios.post('https://todo-app-lilac-tau.vercel.app/api/markTodo' ,data ,{ 
         withCredentials: true ,
         headers:{
             auth:token
@@ -39,7 +39,7 @@ const MarkTodoApi = async (data)=>{
 
 const DeleteTodoApi = async (data)=>{
     let token = getToken();
-    return await axios.post('http://localhost:3000/api/deleteTodo' ,data ,{ 
+    return await axios.post('https://todo-app-lilac-tau.vercel.app/api/deleteTodo' ,data ,{ 
         withCredentials: true ,
         headers:{
             auth:token
