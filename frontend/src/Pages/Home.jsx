@@ -96,7 +96,7 @@ ${category === "Completed" && "bg-richblack-800 py-2 border-2 border-richblack-2
             </div>
 
 
-            <div className='fixed xs:bottom-4 xs:right-4'>
+            <div className='fixed xs:bottom-4 xs:right-[1rem] lg:bottom-4 lg:right-[3rem]'>
               <button className='bg-yellow-400 text-lg hover:bg-yellow-500 py-2 px-16 rounded-full font-bold  shadow-[0_6px_8px_-4px_#e4a11b] transition duration-150 ease-in-out' variant="gradient" onClick={() => setShowModal(true)} >Add Task</button>
             </div>
           </div>
