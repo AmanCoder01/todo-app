@@ -19,15 +19,18 @@ function App() {
   return (
     <div className="bg-richblack-900  h-full max-h-full w-screen">
       <div >
-        <Navbar user={user} setShowModal={setShowModal}  />
+        <Navbar user={user} setShowModal={setShowModal} />
       </div>
-     <div className="mt-[4rem]"> 
-     <Routes>
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login user={user} setUser={setUser} />} />
-        <Route path="/dashboard" element={<Home user={user} showModal={showModal} setShowModal={setShowModal}/>} />
-      </Routes>
-     </div>
+      <div className="mt-[4rem]">
+        <Routes>
+          <Route path="/" element={<Welcome />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login user={user} setUser={setUser} />} />
+          <Route path="/dashboard" element={<Home user={user} showModal={showModal} setShowModal={setShowModal} />} />
+          <Route path="*" element={<Error />} />
+
+        </Routes>
+      </div>
 
     </div>
   );

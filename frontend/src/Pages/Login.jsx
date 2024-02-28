@@ -13,7 +13,6 @@ import Spinner from '../Components/Spinner.jsx';
 const Login = () => {
   const [formData, setFormData] = useState({ email: "", password: "" });
   const [error, setError] = useState(null);
-  const { loading } = useSelector((state) => state.app);
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -46,7 +45,6 @@ const Login = () => {
       if (res.data.status === 200) {
         localStorage.setItem("user", JSON.stringify(res.data.data));
         dispatch(setToken(res.data.data));
-        dispatch(loadingFalse(false));
         navigate("/dashboard");
         toast.success(res.data.message);
         return;
