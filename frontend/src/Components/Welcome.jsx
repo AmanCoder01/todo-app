@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Welcome = () => {
     return (
-        <div className='flex flex-col gap-5 items-center h-[100vh] w-[100wh] justify-center'>
+        <div className='flex flex-col gap-5 items-center h-[90vh] w-[90wh] justify-center'>
             <h1 className="text-center text-4xl font-bold text-richblack-5">
                 Welcome to the ToDo App!
             </h1>
