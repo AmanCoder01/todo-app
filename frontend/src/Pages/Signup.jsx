@@ -38,7 +38,7 @@ const Signup = () => {
                 return;
             }
             if (res.data.status === 202) {
-                toast.success(res.data.message);
+                toast.error(res.data.message);
                 return;
             }
         } else {
