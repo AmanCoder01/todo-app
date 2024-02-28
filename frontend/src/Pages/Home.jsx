@@ -59,7 +59,7 @@ const Home = ({ showModal, setShowModal }) => {
         </div>
 
         <div className='  lg:w-7/12 sm:w-12/12  xs:w-[360px]'>
-          <div className='relative flex flex-col mx-auto bg-richblack-700 border-[0.3rem] border-richblack-200 max-w-[700px] min-w-[270px] lg:h-[78vh] xs:h-[60vh] rounded-[1.2rem] my-4'>
+          <div className='relative flex flex-col mx-auto bg-richblack-700 border-[0.3rem] border-richblack-200 max-w-[700px] min-w-[270px] lg:h-[78vh] xs:h-[58vh] rounded-[1.2rem] my-4'>
             <div className='flex items-center justify-center space-x-6  py-8 xs:py-3 mt-3'>
               <button onClick={handleTasks} className={`bg-richblack-700 py-1 px-3 rounded-full min:w-[90px] lg:w-32 border border-richblack-100 transition duration-200 text-richblack-25  
 ${category === "Tasks" && "bg-richblack-800 py-2 border-2 border-richblack-200"
@@ -96,7 +96,7 @@ ${category === "Completed" && "bg-richblack-800 py-2 border-2 border-richblack-2
             </div>
 
 
-            <div className='fixed xs:bottom-4 xs:right-[1rem] lg:bottom-4 lg:right-[7rem] md:right-[5rem] sm:right-[3rem]'>
+            <div className='fixed xs:bottom-1 xs:right-[1rem] lg:bottom-4 lg:right-[7rem] md:right-[5rem] sm:right-[3rem]'>
               <button className='bg-yellow-400 text-lg hover:bg-yellow-500 py-2 px-16 rounded-full font-bold  shadow-[0_6px_8px_-4px_#e4a11b] transition duration-150 ease-in-out' variant="gradient" onClick={() => setShowModal(true)} >Add Task</button>
             </div>
           </div>
