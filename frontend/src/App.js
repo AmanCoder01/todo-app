@@ -8,6 +8,8 @@ import Login from "./Pages/Login";
 import Navbar from "./Components/Navbar";
 import { useState } from "react";
 import "./app.css";
+import Welcome from "./Components/Welcome";
+import Error from "./Components/Error";
 
 
 function App() {
