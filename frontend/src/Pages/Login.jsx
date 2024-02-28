@@ -69,7 +69,7 @@ const Login = () => {
 
           <div className='flex-col mx-auto rounded-lg  bg-richblack-700 py-8 px-14 xs:px-6  w-11/12 max-w-[540px]    flex items-center justify-center '>
             <div className='my-2'>
-              <h1 className='text-white text-2xl font-semibold'>Welcome to our platform</h1>
+              <h1 className='text-white text-2xl font-semibold mx-auto text-center'>Welcome to our platform</h1>
             </div>
             <form action="" onSubmit={submitHandler} className='text-white w-full my-7  flex flex-col gap-6'>
               <label htmlFor="">

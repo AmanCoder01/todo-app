@@ -49,9 +49,9 @@ const Signup = () => {
     return (
         <div className='flex py-12 mx-auto gap-[80px]  w-11/12 max-w-[1300px] flex-wrap-reverse '>
 
-            <div className='flex-col mx-auto rounded-lg bg-richblack-700 py-6  px-14 w-11/12 max-w-[540px]    flex items-center justify-center '>
+            <div className='flex-col mx-auto rounded-lg bg-richblack-700 py-6  px-14 xs:px-6 w-11/12 max-w-[540px]    flex items-center justify-center '>
                 <div className='mt-1'>
-                    <h1 className='text-white text-2xl font-semibold'>Register to our platform</h1>
+                    <h1 className='text-white text-2xl font-semibold mx-auto text-center'>Register to our platform</h1>
                 </div>
                 <form action="" onSubmit={submitHandler} className='text-white w-full my-0 mt-10 flex flex-col gap-3'>
                     <label htmlFor="" >
