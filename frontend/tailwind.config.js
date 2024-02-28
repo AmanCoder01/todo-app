@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'xs': '400px',
+        'xs': '360px',
       },
       colors: {
         richblack: {
